@@ -95,6 +95,7 @@ body {
 
 .comments__post-link {
   display: inline-block;
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .comments__post-link--bg-styles {
@@ -106,6 +107,11 @@ body {
 
 .comments__post-link--bg-styles:hover {
   background-color: #D31342;
+  fill: #D31342;
+}
+
+.comments__post-link--bg-red {
+  background-color: #D31342;
 }
 
 .comments__navigation-icon {
@@ -114,5 +120,10 @@ body {
 
 .comments__navigation-icon--bg-styles {
   fill: #D9D9D9;
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.comments__navigation-icon--bg-styles:hover {
+  fill: #D31342;
 }
 /*# sourceMappingURL=main.css.map */
