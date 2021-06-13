@@ -1,3 +1,15 @@
+@media screen and (min-width: 768px) {
+  .tablet-desktop-invisible {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop-invisible {
+    display: none;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -11,6 +23,7 @@ body {
 .comments__view {
   display: flex;
   overflow: hidden;
+  width: 280px;
 }
 
 .comments__card-home, .comments__card-second, .comments__card-third {
@@ -31,6 +44,7 @@ body {
   min-width: 280px;
   padding-bottom: 20px;
   padding-top: 43px;
+  margin-bottom: 30px;
   background-color: #FAFAFA;
   z-index: -2;
 }
@@ -64,6 +78,14 @@ body {
   margin: 0;
 }
 
+.comments__author {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  margin-bottom: 30px;
+  margin-top: 18px;
+}
+
 .comments__dots-list {
   display: flex;
   list-style: none;
@@ -85,6 +107,7 @@ body {
   justify-content: center;
   list-style: none;
   margin: 0;
+  margin-right: -18px;
   padding: 0;
 }
 
@@ -125,5 +148,76 @@ body {
 
 .comments__navigation-icon--bg-styles:hover {
   fill: #D31342;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 34px;
+  }
+  .comments__view {
+    width: 620px;
+  }
+  .comments__image {
+    margin-bottom: 19px;
+  }
+  .comments__sheet {
+    min-width: 620px;
+    padding-top: 47px;
+    padding-bottom: 34px;
+    margin-bottom: 24px;
+  }
+  .comments__sheet-icon {
+    left: 40px;
+    top: 30px;
+  }
+  .comments__line {
+    width: 524px;
+  }
+  .comments__content {
+    font-size: 14px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+    width: 460px;
+    height: 83px;
+  }
+  .comments__author {
+    font-size: 16px;
+    margin-bottom: 35px;
+    margin-top: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 46px;
+  }
+  .comments__view {
+    width: 926px;
+  }
+  .comments__image {
+    margin-bottom: 15px;
+  }
+  .comments__sheet {
+    min-width: 926px;
+    padding-bottom: 39px;
+    margin-bottom: 15px;
+  }
+  .comments__sheet-icon {
+    left: 50px;
+    top: 32px;
+  }
+  .comments__line {
+    width: 813px;
+  }
+  .comments__content {
+    font-size: 16px;
+    line-height: 186%;
+    width: 750px;
+    height: 52px;
+  }
+  .comments__author {
+    font-size: 20px;
+    margin-top: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
