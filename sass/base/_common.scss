@@ -1,10 +1,9 @@
 body {
     margin: 0;
-    font-family: DM Sans;
-    font-weight: 400;
+    font-family: getFont('main');
+    font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
-    letter-spacing: 0.04em;
+    background-color: getColor('main');
 }
 a {
     text-decoration: none;

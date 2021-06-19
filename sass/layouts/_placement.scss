@@ -1,8 +1,7 @@
 .placement {
-    background-color: #FFF5F6;
+    background-color: getColor('secondary');
     position: relative;
-    width: 280px;
-    height: 1558px;
+    height: 1502px;
     
     &__list {
         display: flex;
@@ -61,11 +60,13 @@
     &__days,
     &__city {
         color: #000000;
+        line-height: 186%;
+        height: 22px;
     }
     &__description {
         line-height: 1.5;
         color: #907E82;
-        width: 183px;
+        width: 179px;
         max-height: 36px;
         margin-bottom: 25px;
         margin-top: 10px;
@@ -78,9 +79,12 @@
     &__hours {
         color: #FFA5BA;
         margin-bottom: 10px;
+        height: 22px;
+        line-height: 186%;
     }
     &__link {
         color: #907E82;
+        height: 20px;
     }
     &__button-list {
         position: absolute;
@@ -129,21 +133,21 @@
 }
 @media screen and (min-width: 768px) {
     .placement {
-        width: 700px;
-       height: 812px;
+        
+       height: 756px;
         &__list {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             position: absolute;
-            top: -84px;
+            top: -78px;
             left: 50%;
             transform: translateX(-50%);
             width: 700px;
         }
         &__item {
             padding: 50px 31px 30px;
-            max-width: 220px;
+            width: 220px;
         }
         &__place {
             margin-bottom: 30px;

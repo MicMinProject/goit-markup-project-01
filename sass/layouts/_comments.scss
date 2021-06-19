@@ -5,6 +5,10 @@ body {
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 320px;
+    height: 100%;
 }
 .comments{
     margin-bottom: 170px;
@@ -59,7 +63,6 @@ body {
         margin: 0;
     }
     &__author {
-        font-weight: 500;
         font-size: 14px;
         line-height: 186%;
         margin-bottom: 30px;
@@ -115,7 +118,7 @@ body {
         fill: #D31342;
         &--bg-styles {
             fill: #D9D9D9;
-            transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
             &:hover {
                 fill:#D31342;
             }
@@ -125,6 +128,7 @@ body {
 @media screen and (min-width:768px) {
     .container {
         padding: 0 34px;
+        width: 768px;
     }
     .comments{
         &__view {
@@ -163,6 +167,7 @@ body {
 @media screen and (min-width: 1200px) {
     .container {
         padding: 0 46px;
+        width: 1200px;
     }
     .comments{
         &__view {

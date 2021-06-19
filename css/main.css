@@ -1,22 +1,21 @@
 @media screen and (min-width: 768px) {
-  .tablet-desktop-invisible {
+  .invisible-tablet-desktop {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .desktop-invisible {
+  .invisible-desktop {
     display: none;
   }
 }
 
 body {
   margin: 0;
-  font-family: DM Sans;
-  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
-  letter-spacing: 0.04em;
+  background-color: #fff;
 }
 
 a {
@@ -42,6 +41,10 @@ body {
   display: flex;
   justify-content: center;
   padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 320px;
+  height: 100%;
 }
 
 .comments {
@@ -104,7 +107,6 @@ body {
 }
 
 .comments__author {
-  font-weight: 500;
   font-size: 14px;
   line-height: 186%;
   margin-bottom: 30px;
@@ -168,7 +170,7 @@ body {
 
 .comments__navigation-icon--bg-styles {
   fill: #D9D9D9;
-  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .comments__navigation-icon--bg-styles:hover {
@@ -178,6 +180,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 34px;
+    width: 768px;
   }
   .comments__view {
     width: 620px;
@@ -215,6 +218,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     padding: 0 46px;
+    width: 1200px;
   }
   .comments__view {
     width: 926px;
@@ -249,8 +253,7 @@ body {
 .placement {
   background-color: #FFF5F6;
   position: relative;
-  width: 280px;
-  height: 1558px;
+  height: 1502px;
 }
 
 .placement__list {
@@ -313,12 +316,14 @@ body {
 
 .placement__days, .placement__city {
   color: #000000;
+  line-height: 186%;
+  height: 22px;
 }
 
 .placement__description {
   line-height: 1.5;
   color: #907E82;
-  width: 183px;
+  width: 179px;
   max-height: 36px;
   margin-bottom: 25px;
   margin-top: 10px;
@@ -333,10 +338,13 @@ body {
 .placement__hours {
   color: #FFA5BA;
   margin-bottom: 10px;
+  height: 22px;
+  line-height: 186%;
 }
 
 .placement__link {
   color: #907E82;
+  height: 20px;
 }
 
 .placement__button-list {
@@ -389,22 +397,21 @@ body {
 
 @media screen and (min-width: 768px) {
   .placement {
-    width: 700px;
-    height: 812px;
+    height: 756px;
   }
   .placement__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
-    top: -84px;
+    top: -78px;
     left: 50%;
     transform: translateX(-50%);
     width: 700px;
   }
   .placement__item {
     padding: 50px 31px 30px;
-    max-width: 220px;
+    width: 220px;
   }
   .placement__place {
     margin-bottom: 30px;
