@@ -33,10 +33,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-body {
-  margin: 0;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -45,6 +41,20 @@ body {
   margin-left: auto;
   width: 320px;
   height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 34px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 46px;
+    width: 1200px;
+  }
 }
 
 .comments {
@@ -178,9 +188,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 0 34px;
-    width: 768px;
+  .comments {
+    margin-bottom: 197px;
   }
   .comments__view {
     width: 620px;
@@ -216,10 +225,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    padding: 0 46px;
-    width: 1200px;
-  }
   .comments__view {
     width: 926px;
   }
@@ -317,11 +322,14 @@ body {
 .placement__days, .placement__city {
   color: #000000;
   line-height: 186%;
+  letter-spacing: 0.04em;
   height: 22px;
 }
 
 .placement__description {
   line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   color: #907E82;
   width: 179px;
   max-height: 36px;
@@ -340,11 +348,19 @@ body {
   margin-bottom: 10px;
   height: 22px;
   line-height: 186%;
+  letter-spacing: 0.04em;
+}
+
+.placement__phone-mail {
+  height: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .placement__link {
   color: #907E82;
-  height: 20px;
+  line-height: 1.5;
 }
 
 .placement__button-list {
@@ -358,10 +374,9 @@ body {
 .placement__button-locations {
   width: 161px;
   height: 44px;
-  font-family: DM Sans;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.313px;
+  line-height: 1.313;
   display: flex;
   align-items: center;
   text-align: center;
@@ -376,11 +391,9 @@ body {
 .placement__button-franchise {
   width: 161px;
   height: 44px;
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.313px;
+  line-height: 1.313;
   display: flex;
   align-items: center;
   text-align: center;
@@ -400,22 +413,17 @@ body {
     height: 756px;
   }
   .placement__list {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
     top: -78px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 700px;
   }
   .placement__item {
-    padding: 50px 31px 30px;
+    padding: 50px 32px 50px 31px;
     width: 220px;
   }
   .placement__place {
     margin-bottom: 30px;
-    border-bottom: 1px solid #E1E1E1;
   }
   .placement__cafe {
     width: 73px;
@@ -431,11 +439,12 @@ body {
   }
   .placement__days, .placement__city {
     color: #000000;
+    font-size: 14px;
   }
   .placement__description {
-    line-height: 1.5;
-    color: #907E82;
-    width: 145px;
+    font-size: 14px;
+    line-height: 166%;
+    width: 157px;
     max-height: 65px;
     margin-bottom: 30px;
     margin-top: 14px;
@@ -443,11 +452,17 @@ body {
   .placement__schedule {
     padding-bottom: 20px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #E1E1E1;
   }
   .placement__hours {
-    color: #FFA5BA;
     margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .placement__phone-mail {
+    height: 48px;
+  }
+  .placement__link {
+    font-size: 14px;
+    line-height: 183%;
   }
   .placement__button-list {
     position: absolute;
@@ -456,6 +471,69 @@ body {
   }
   .placement__button-locations {
     margin-right: 14.5px;
+    line-height: 1.313;
+  }
+  .placement__button-franchise {
+    line-height: 1.313;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .placement {
+    background-image: url(../../images/placement/placement-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 765px;
+  }
+  .placement__list {
+    top: -102px;
+    width: 1050px;
+  }
+  .placement__item {
+    padding: 51px 44px 62px 43px;
+    min-width: 330px;
+  }
+  .placement__place {
+    margin-bottom: 32px;
+  }
+  .placement__cafe {
+    margin-bottom: 32px;
+  }
+  .placement__foodtruck {
+    margin-bottom: 32px;
+  }
+  .placement__days, .placement__city {
+    font-size: 16px;
+    height: 30px;
+  }
+  .placement__description {
+    font-size: 16px;
+    line-height: 183%;
+    width: 243px;
+    max-height: 50px;
+    margin-bottom: 32px;
+    margin-top: 10px;
+  }
+  .placement__schedule {
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+  .placement__hours {
+    font-size: 16px;
+    height: 30px;
+  }
+  .placement__phone-mail {
+    height: 50px;
+  }
+  .placement__link {
+    font-size: 16px;
+  }
+  .placement__button-locations {
+    width: 198px;
+    margin-right: 15px;
+  }
+  .placement__button-franchise {
+    width: 180px;
   }
 }
 /*# sourceMappingURL=main.css.map */

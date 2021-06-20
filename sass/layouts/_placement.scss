@@ -61,10 +61,13 @@
     &__city {
         color: #000000;
         line-height: 186%;
+        letter-spacing: 0.04em;
         height: 22px;
     }
     &__description {
         line-height: 1.5;
+        font-weight: 400;
+        letter-spacing: 0.04em;
         color: #907E82;
         width: 179px;
         max-height: 36px;
@@ -81,10 +84,17 @@
         margin-bottom: 10px;
         height: 22px;
         line-height: 186%;
+        letter-spacing: 0.04em;
+    }
+    &__phone-mail {
+        height: 37px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     &__link {
         color: #907E82;
-        height: 20px;
+        line-height: 1.5;
     }
     &__button-list {
         position: absolute;
@@ -96,10 +106,9 @@
     &__button-locations {
         width: 161px;
         height: 44px;
-        font-family: DM Sans;
         font-weight: bold;
         font-size: 16px;
-        line-height: 1.313px;
+        line-height: 1.313;
         display: flex;
         align-items: center;
         text-align: center;
@@ -113,11 +122,9 @@
     &__button-franchise {
         width: 161px;
         height: 44px;
-        font-family: DM Sans;
-        font-style: normal;
         font-weight: bold;
         font-size: 16px;
-        line-height: 1.313px;
+        line-height: 1.313;
         display: flex;
         align-items: center;
         text-align: center;
@@ -136,22 +143,17 @@
         
        height: 756px;
         &__list {
-            display: flex;
             flex-direction: row;
             justify-content: space-between;
-            position: absolute;
             top: -78px;
-            left: 50%;
-            transform: translateX(-50%);
             width: 700px;
         }
         &__item {
-            padding: 50px 31px 30px;
+            padding: 50px 32px 50px 31px;
             width: 220px;
         }
         &__place {
             margin-bottom: 30px;
-            border-bottom: 1px solid #E1E1E1;
         }
         &__cafe {
             width: 73px;
@@ -168,11 +170,12 @@
         &__days,
         &__city {
             color: #000000;
+            font-size: 14px;
         }
         &__description {
-            line-height: 1.5;
-            color: #907E82;
-            width: 145px;
+            font-size: 14px;
+            line-height: 166%;
+            width: 157px;
             max-height: 65px;
             margin-bottom: 30px;
             margin-top: 14px;
@@ -180,11 +183,17 @@
         &__schedule {
             padding-bottom: 20px;
             margin-bottom: 30px;
-            border-bottom: 1px solid #E1E1E1;
         }
         &__hours {
-            color: #FFA5BA;
             margin-bottom: 16px;
+            font-size: 14px;
+        }
+        &__phone-mail {
+            height: 48px;
+        }
+        &__link {
+            font-size: 14px;
+            line-height: 183%;
         }
         &__button-list {
             position: absolute;
@@ -193,6 +202,70 @@
         }
         &__button-locations {
             margin-right: 14.5px;
+            line-height: 1.313;
+        }
+        &__button-franchise {
+            line-height: 1.313;
         }
     }
+}
+@media screen and (min-width: 1200px) {
+    .placement {
+        background-image: url(../../images/placement/placement-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        height: 765px;
+         &__list {
+             top: -102px;
+             width: 1050px;
+         }
+         &__item {
+             padding: 51px 44px 62px 43px;
+             min-width: 330px;
+         }
+         &__place {
+             margin-bottom: 32px;
+         }
+         &__cafe {
+             margin-bottom: 32px;
+         }
+         &__foodtruck {
+             margin-bottom: 32px;
+         }
+         &__days,
+         &__city {
+             font-size: 16px;
+             height: 30px;
+         }
+         &__description {
+             font-size: 16px;
+             line-height: 183%;
+             width: 243px;
+             max-height: 50px;
+             margin-bottom: 32px;
+             margin-top: 10px;
+         }
+         &__schedule {
+             padding-bottom: 16px;
+             margin-bottom: 32px;
+         }
+         &__hours {
+             font-size: 16px;
+             height: 30px;
+         }
+         &__phone-mail {
+             height: 50px;
+         }
+         &__link {
+            font-size: 16px;
+         }
+         &__button-locations {
+             width: 198px;
+             margin-right: 15px;
+         }
+         &__button-franchise {
+             width: 180px;
+         }
+     }
 }
