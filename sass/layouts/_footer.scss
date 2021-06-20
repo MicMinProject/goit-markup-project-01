@@ -1,3 +1,79 @@
 .footer{
     background-color: getColor('secondary');
+    &__block {
+        display: block;
+    }
+    &__homemade {
+        font-family: 'Titan One', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.167;
+        text-transform: uppercase;
+        color: getColor('pink-font');
+        margin-bottom: 17px;
+        width: 232px;
+        height: 42px;
+    }
+    &__passion {
+        font-family: 'Titan One', sans-serif;
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 1.147;
+        text-transform: uppercase;
+        color: getColor('accent');
+        width: 200px;
+        height: 76px;
+        margin-bottom: 43px;
+    }
+    &__social-list {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 46px;
+    }
+    &__social-item {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 28.24px;
+    }
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: getColor('pink-font');
+        &:hover {
+            background-color: getColor('accent');
+        }
+    }
+    &__contact {
+        font-weight: bold;
+        text-align: right;
+        margin-bottom: 43px;
+    }
+    &__phone {
+        color: getColor('accent');
+    }
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 22px 0 25px;
+        border-top: 1px solid #E1E1E1;
+    }
+    &__copyright {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 152%;
+        color: #907E82;
+        width: 149px;
+        height: 42px;
+        text-align: center;
+    }
+}
+.social-icon-github,
+.social-icon-telegram,
+.social-icon-facebook {
+    fill: getColor('main');
 }
