@@ -118,6 +118,7 @@
         border-radius: 22px;
         margin-bottom: 10px;
         border: none;
+        cursor: pointer;
     }
     &__button-franchise {
         width: 161px;
@@ -133,6 +134,12 @@
         color: #D41443;
         border-radius: 22px;
         border: none;
+        cursor: pointer;
+        transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover {
+            background-color: #ECEBEB;
+        }
     }
 }
 .icon-arrow{
